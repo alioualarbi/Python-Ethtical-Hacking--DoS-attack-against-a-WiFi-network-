@@ -1,14 +1,3 @@
-##################################################################################################
-#Copyright of David Bombal, 2021                                                                 #
-#https://www.davidbombal.com                                                                     #
-#https://www.youtube.com/davidbombal                                                             #
-#                                                                                                #
-# Please note that this code can be improved by using functions. It is not programmed to cater   #
-# for all situations, but to be used as a learning tool.                                         #
-#                                                                                                #
-# This code is provided for educational purposes only. Do good. Be Ethical.                      #
-#                                                                                                #
-##################################################################################################
 
 import subprocess
 import winreg
