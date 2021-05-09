@@ -38,4 +38,4 @@ This will give a reverse shell to the attacker which attacker could use to execu
 ### 3. Executing a command through shell: Now if we enter any command at the receiver’s terminal the output would be displayed on the attacker’s terminal.
 ```shell
 netcat-live-reverse-shell
-```shell
+```
